@@ -25,3 +25,12 @@ document.getElementById("right").addEventListener("click", function () {
 document.getElementById("justify").addEventListener("click", function () {
   justify("text-write");
 });
+
+document.getElementById("color").addEventListener("change", function (event) {
+  const colorText = document.getElementById("text-write");
+  colorText.style.color = event.target.value;
+});
+document.getElementById("font-size").addEventListener("change", function (event) {
+  const fontSizeText = document.getElementById("text-write");
+  fontSizeText.style.fontSize = event.target.value + "px";
+});
