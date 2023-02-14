@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Editor</title>
+    <script src="https://kit.fontawesome.com/925bf703bc.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="text-gray-900 mx-auto container">
+      <div>
+        <h1 class="text-center text-6xl font-bold">My Text Editor</h1>
+
+        <div class="mt-16 bg-indigo-500 p-10 w-11/12 rounded-lg">
+          <div class="grid grid-cols-3 px-10">
+            <div class="space-x-4">
+              <button id="bold"><i class="fa-solid text-white fa-bold"></i></button>
+              <button id="italic"><i class="fa-solid text-white fa-italic"></i></button>
+              <button id="underline"><i class="fa-solid text-white fa-underline"></i></button>
+            </div>
+            <div class="space-x-4">
+              <button id="left"><i class="fa-solid text-white fa-align-left"></i></button>
+              <button id="center"><i class="fa-solid text-white fa-align-center"></i></button>
+              <button id="right"><i class="fa-solid text-white fa-align-right"></i></button>
+              <button id="justify"><i class="fa-solid text-white fa-align-justify"></i></button>
+            </div>
+            <div class="flex gap-4">
+              <input type="number" name="" id="" />
+              <p>aA</p>
+              <input type="color" name="" id="" />
+            </div>
+          </div>
+
+          <textarea class="w-full mt-6 rounded-lg outline outline-gray-700 px-2 py-2" name="" id="text-write" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/utility.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
